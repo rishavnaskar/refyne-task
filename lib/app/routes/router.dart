@@ -10,7 +10,7 @@ class Routes {
   static const updateTaskScreen = 'update-task-screen';
 }
 
-final GoRouter goRouter = GoRouter(
+final GoRouter router = GoRouter(
   routes: <RouteBase>[
     GoRoute(
       path: Routes.homeScreen,

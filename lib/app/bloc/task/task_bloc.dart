@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:personal_task_manager_flutter/app/bloc/task_event.dart';
-import 'package:personal_task_manager_flutter/app/bloc/task_state.dart';
+import 'package:personal_task_manager_flutter/app/bloc/task/task_event.dart';
+import 'package:personal_task_manager_flutter/app/bloc/task/task_state.dart';
 import 'package:personal_task_manager_flutter/app/models/task_item.dart';
 import 'package:personal_task_manager_flutter/app/models/task_model.dart';
 import 'package:personal_task_manager_flutter/domain/model/task_domain_model.dart';

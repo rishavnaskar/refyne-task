@@ -225,6 +225,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+  fl_three_state_switch:
+    dependency: "direct main"
+    description:
+      name: fl_three_state_switch
+      sha256: e95890be0c72bb89ca0c9b9d0e08a0e1496d796eb4e1130bcbc4b158fb56c347
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
   flutter:
     dependency: "direct main"
     description: flutter

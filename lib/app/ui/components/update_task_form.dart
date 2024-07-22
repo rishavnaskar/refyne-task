@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:personal_task_manager_flutter/app/bloc/task_bloc.dart';
-import 'package:personal_task_manager_flutter/app/bloc/task_event.dart';
-import 'package:personal_task_manager_flutter/app/bloc/task_state.dart';
+import 'package:personal_task_manager_flutter/app/bloc/task/task_bloc.dart';
+import 'package:personal_task_manager_flutter/app/bloc/task/task_event.dart';
+import 'package:personal_task_manager_flutter/app/bloc/task/task_state.dart';
 import 'package:personal_task_manager_flutter/app/models/task_item.dart';
 import 'package:personal_task_manager_flutter/app/ui/components/helper.dart';
 import 'package:go_router/go_router.dart';
+import 'package:personal_task_manager_flutter/app/utils/colors.dart';
 
 class UpdateTaskForm extends StatefulWidget {
   final TaskItem taskItem;
@@ -68,6 +69,9 @@ class _UpdateTaskFormState extends State<UpdateTaskForm> {
                       context.pop();
                     }
                   },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: ambientColor,
+                  ),
                   child: const Text('Update'),
                 ),
               ),
