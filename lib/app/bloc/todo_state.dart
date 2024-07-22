@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:personal_task_manager_flutter/app/model/todo_item.dart';
+import 'package:personal_task_manager_flutter/app/models/todo_model.dart';
 
 abstract class TodoState extends Equatable {
   const TodoState();
@@ -13,7 +13,7 @@ class TodoLoadingState extends TodoState {}
 class TodoLoadedState extends TodoState {
   const TodoLoadedState(this.todoModel);
 
-  final TodoItem todoModel;
+  final TodoModel todoModel;
 
   @override
   List<Object> get props => [todoModel];

@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:personal_task_manager_flutter/app/model/todo_item.dart';
+import 'package:personal_task_manager_flutter/app/models/todo_item.dart';
 
 abstract class TodoEvent extends Equatable {
   const TodoEvent();

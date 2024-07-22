@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
-import 'package:personal_task_manager_flutter/models/task.dart';
 
 Future<void> main() async {
-  await Hive.initFlutter();
-  Hive.registerAdapter<Task>(TaskAdapter());
-  var box = await Hive.openBox<Task>("tasksBox");
+  // AppDatabase database = AppDatabase();
+  // await database.initialize();
+  // configureDependencies(database);
   runApp(const MyApp());
 }
 
