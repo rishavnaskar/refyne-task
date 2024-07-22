@@ -1,12 +1,12 @@
 import 'package:equatable/equatable.dart';
 
-class TodoItem extends Equatable {
+class TaskItem extends Equatable {
   final int id;
   final String title;
   final String content;
   final bool isCompleted;
 
-  const TodoItem({
+  const TaskItem({
     required this.id,
     required this.title,
     required this.content,
