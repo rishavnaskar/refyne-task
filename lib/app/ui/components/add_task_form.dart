@@ -35,6 +35,10 @@ class _AddTaskFormState extends State<AddTaskForm> {
               maxLines: 1,
               maxLength: 50,
               validator: titleFieldValidator,
+              decoration: const InputDecoration(
+                hintText: 'A catchy task name...',
+                hintStyle: TextStyle(color: Colors.grey),
+              ),
             ),
             const SizedBox(height: 24.0),
             const Text('Content'),
@@ -45,6 +49,10 @@ class _AddTaskFormState extends State<AddTaskForm> {
               maxLines: 3,
               maxLength: 200,
               validator: contentFieldValidator,
+              decoration: const InputDecoration(
+                hintText: 'What\'s the task about...',
+                hintStyle: TextStyle(color: Colors.grey),
+              ),
             ),
             const SizedBox(height: 24.0),
             Padding(
