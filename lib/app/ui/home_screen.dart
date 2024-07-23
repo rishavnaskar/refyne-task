@@ -28,26 +28,29 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Personal Task Manager'),
         actions: [
           BlocBuilder<FilterTasksBloc, FilterTasksState>(
-            builder: (context, state) {
-              return Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  FlThreeStateSwtich(
-                    height: 20,
-                    width: 50,
-                    onChanged: (state) {
-                      context.read<FilterTasksBloc>().add(FilterTasks(state));
-                    },
-                    state: state.switchState,
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    getFilterTitle(state.switchState),
-                    style: const TextStyle(fontSize: 12),
-                  ),
-                ],
-              );
-            },
+            builder: (context, state) => Row(
+              children: [
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    FlThreeStateSwtich(
+                      height: 20,
+                      width: 50,
+                      onChanged: (state) {
+                        context.read<FilterTasksBloc>().add(FilterTasks(state));
+                      },
+                      state: state.switchState,
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      getFilterTitle(state.switchState),
+                      style: const TextStyle(fontSize: 12),
+                    ),
+                  ],
+                ),
+                const SizedBox(width: 10),
+              ],
+            ),
           ),
           const SizedBox(width: 8),
         ],
