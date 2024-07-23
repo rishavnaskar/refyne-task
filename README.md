@@ -7,7 +7,7 @@
 ![Clean Architecture](https://img.shields.io/badge/Clean%20Architecture-00C853?logo=clean-architecture&logoColor=white)
 ![Stars](https://img.shields.io/github/stars/rishavnaskar/refyne-task?style=social)
 
-Welcome to the **Refyne Task** repository! This project is a technical assessment to create a To-Do application using Flutter and Dart. The goal is to evaluate the ability to build a responsive, user-friendly, and functional application.
+Welcome to the **Refyne Task** repository! This project is a technical assessment to create a Tasks application using Flutter and Dart. The goal is to evaluate the ability to build a responsive, user-friendly, and functional application.
 
 ## Table of Contents
 
@@ -21,12 +21,11 @@ Welcome to the **Refyne Task** repository! This project is a technical assessmen
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Objective
 
-Create a To-Do application using Flutter and Dart. This assignment evaluates the ability to build a responsive, user-friendly, and functional application.
+Create a Tasks application using Flutter and Dart. This assignment evaluates the ability to build a responsive, user-friendly, and functional application.
 
 ## Features
 
